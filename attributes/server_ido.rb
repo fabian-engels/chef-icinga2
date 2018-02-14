@@ -7,6 +7,7 @@ default['icinga2']['ido']['db_host'] = 'localhost'
 default['icinga2']['ido']['db_port'] = 3306
 default['icinga2']['ido']['db_name'] = 'icinga'
 default['icinga2']['ido']['db_user'] = 'icinga'
+default['icinga2']['ido']['db_socket'] = '/var/run/mysql-icinga/mysqld.sock'
 default['icinga2']['ido']['db_password'] = 'icinga'
 default['icinga2']['ido']['mysql_home'] = '/etc/mysql'
 

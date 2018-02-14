@@ -5,7 +5,7 @@ default['icinga2']['version'] = value_for_platform(
   %w(centos redhat fedora amazon) => { 'default' => '2.6.1-1' },
   %w(debian ubuntu) => { 'default' => '2.6.1-1' }
 )
-
+default['icinga2']['ido']['type'] = 'mysql'
 default['icinga2']['enable_env_pki'] = false
 default['icinga2']['ignore_version'] = false
 default['icinga2']['cookbook'] = 'icinga2'

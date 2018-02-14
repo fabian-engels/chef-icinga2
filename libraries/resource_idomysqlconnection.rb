@@ -48,6 +48,14 @@ class Chef
         )
       end
 
+      def socket(arg = nil)
+        set_or_return(
+          :socket, arg,
+          :kind_of => String,
+          :default => nil
+        )
+      end
+
       def password(arg = nil)
         set_or_return(
           :password, arg,
@@ -159,6 +167,7 @@ class Chef
                     :user => new_resource.user,
                     :password => new_resource.password,
                     :database => new_resource.database,
+                    :socket => new_resource.socket,
                     :table_prefix => new_resource.table_prefix,
                     :instance_name => new_resource.instance_name,
                     :instance_description => new_resource.instance_description,
